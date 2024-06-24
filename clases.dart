@@ -7,5 +7,5 @@ void main() {
   }
   var paseao = "wena macaco";
 
-
+  var nueva = "Esta vatiable se ve solo en desarrollado";
 }
