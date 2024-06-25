@@ -4,4 +4,10 @@ void main() {
   var paseao = "wena macaco";
 
   var nueva = "Esta vatiable se ve solo en desarrollado";
+
+  // Sets
+
+  Set<String> nombres = { 'David', 'Benja' };
+
+  print(nombres);
 }
