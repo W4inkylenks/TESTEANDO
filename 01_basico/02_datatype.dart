@@ -39,4 +39,21 @@ O'connor''';
 
   print( isNotActive );
 
+  // LISTAS
+
+  List<String> villanos = ['Lex', 'Red Skull', 'Doom'];
+
+  villanos.add('Duende Verde');
+
+
+  print( villanos );
+
+  //SETSSSSS
+
+  var villanos2 = { 'Lex', 'Red Skull', 'Doom' };
+
+  print( villanos2 );
+
+
+
 }
