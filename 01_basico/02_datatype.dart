@@ -44,15 +44,47 @@ O'connor''';
   List<String> villanos = ['Lex', 'Red Skull', 'Doom'];
 
   villanos.add('Duende Verde');
-
+  villanos.add('Duende Verde');
+  villanos.add('Duende Verde');
+  villanos.add('Duende Verde');
 
   print( villanos );
 
-  //SETSSSSS
+  var villanosSet = villanos.toSet(); // Metodo para eleminar los elementos duplicados, se pasan a Set y luego a Lista
+  print( villanosSet.toList() );
 
-  var villanos2 = { 'Lex', 'Red Skull', 'Doom' };
+  //SETSSSSS
+// En los set no se pueden colocar elementos duplicados
+
+  Set<String> villanos2 = { 'Lex', 'Red Skull', 'Doom' }; // Solo se pueden colocar elementos del tipo String
 
   print( villanos2 );
+
+  // MAPASSS "EL MAPA" Diccionarios, Objetos Literales
+
+  // La llave no es necesario que sea un string, tambien puede ser un int, double, etc etc pero se tiene que definir en la declaracion (Map<int, dynamic>)
+  Map<int, dynamic> ironman = {
+    1: 'Tony Stark',
+    2: 'Inteligencia y el dinero',
+    3: 9000,
+  };
+
+  print( ironman );
+  print( ironman['nivel'] );
+
+  Map<String, dynamic> capitan = new Map();
+
+  capitan.addAll({
+    'nombre': 'Steve',
+    'poder': 'Soportar droga sin morir',
+    'nivel': 5000
+  });
+
+  print( capitan );
+  print( capitan['nivel']);
+
+  //capitan.addAll( ironman ); ===> Error ya que los dos mapas son distintos ironman tiene sus llaves como int y capitan como string lo que los hace incompatibles
+
 
 
 
